@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Russo+One&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+}
+
+.registerPage{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.1);
+}
+
+.formContainer {
+  width: 30%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0,0.2);
+  border-radius: 10px;
+}
+
+.formContainer2 {
+  position: absolute;
+  top: 18%;
+  left: 35%;
+  width: 30%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0,0.2);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.form{
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.form h1{
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formItem{
+  width: 100%;
+}
+
+.inputField{
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding-left: 5px;
+  width: 100%;
+  height: 12%;
+}
+
+.button{
+  font-size: 1.8rem;
+  background: rgba(13, 127, 235);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 90%;
+  height: 12%;
+}
+
+.secondaryBtn{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.secondaryBtn .switchBtn{
+  font-size: 1.7rem;
+  width: 60%;
+  background-color: white;
+  color: #1887cc;
+  border: none;
+}
+
+.cancelBtn{
+  width: 25%;
+  height: 45%;
+  background: #fff;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-size: 1.7rem;
+}
+
+.feed {
+  width: 100%;
+  height: 100%;
+}
+
+.header{
+  border-bottom: 1px solid #000;
+  width: 100%;
+  height: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header h2{
+  font-family: 'Russo One', sans-serif;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 2.8rem;
+  color: royalblue;
+}
+
+.navBar{
+  width: 70%;
+  height: 100%;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navContainer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
+
+.navContainer p {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.nameButton {
+  background: none;
+  border: none;
+}
+
+.nameButton:hover {
+  color: #1887cc;
+}
+
+.btnContainer{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navBtn {
+  width: 30%;
+  height: 60%;
+  background: none;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0.2px 0.2px 2px 2px rgb(0,0,0);
+}
+
+.posts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.postHeading {
+  width: 100%;
+  height: 10vh;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.7rem;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.postTable{
+  width: 90%;
+}
+.actionBtns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.actionBtns Button{
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.deleteButton {
+  background: none;
+  border: none;
+}
+
+.deleteButton svg {
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  color: rgba(0, 0, 0,0.5);
+  cursor: pointer;
+}
+
+.deleteButton svg:focus, 
+.deleteButton svg:hover {
+  color: red;
+  outline: none;
+}
+
+#postField{
+  margin-bottom: 10px;
+}
+
+.commentBtn {
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.confirmModal {
+
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.msgContainer {
+  width: 100%;
+  height: 50%;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.confirmBtnContainer{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.confirmBtns{
+  width: 22%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.unauthorized {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.msgHeader {
+  color: rgb(251, 115, 4);
+  font-size: 20rem;
+}
+
+.msgTxt {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.homeButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
